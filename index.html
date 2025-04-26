@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista Verde - Innovando con Vos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="img/ico.ico">
+
+  
+  <link rel="stylesheet" href="estilos.css"/>
+
+</head>
+<body>
+
+  <header class="navbar">
+
+      <h1 class="logo">Lista Verde</h1>
+      <br>
+    
+    <nav class="navbar-links">
+      <a href="https://www.instagram.com/lista_verde.cen25" target="_blank" class="nav-icon instagram">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://whatsapp.com/channel/0029Vb5x0wXKWEKkEsbpKO0h" target="_blank" class="nav-icon whatsapp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://www.tiktok.com/@tu_perfil_de_tiktok" target="_blank" class="nav-icon tiktok">
+        <i class="fab fa-tiktok"></i> TikTok
+      </a>
+      <a href="mailto:tu_correo@electronico.com" class="nav-icon mail">
+        <i class="fas fa-envelope"></i> Contacto
+      </a>
+    </nav>
+  </header>
+  <section class="nosotros-section" style="padding: 60px 20px; background-color: #f1f8e9; text-align: center;">
+    <div class="seccion-encabezado animate__animated animate__fadeInUp" style="margin-bottom: 30px; cursor: pointer;" onclick="toggleCentroEstudiantes()">
+      <h2 style="font-size: 2.8rem; color: #2e7d32; font-weight: bold;">¿Qué es un Centro de Estudiantes?</h2>
+      <p style="font-size: 1.2rem; color: #4e4e4e; max-width: 800px; margin: 0 auto;">
+        Hacé clic para conocer su importancia dentro del colegio 📚💬
+      </p>
+    </div>
+  
+    <div id="centroEstudiantesInfo" class="fila-integrantes" style="display: none; flex-wrap: wrap; justify-content: center; gap: 30px; margin-top: 30px;">
+      
+      <div class="integrante-card info-estatica">
+        <h5>📌 ¿Qué es?</h5>
+        <p class="subtitulo">Una organización de estudiantes</p>
+        <p class="descripcion">Es un grupo formado por alumnos que representa a todo el estudiantado ante la escuela. Participa en reuniones, plantea ideas y colabora con las autoridades para mejorar la vida escolar.</p>
+      </div>
+  
+      <div class="integrante-card info-estatica">
+        <h5>🔎 ¿Para qué sirve?</h5>
+        <p class="subtitulo">Defender y proponer</p>
+        <p class="descripcion">El centro defiende los derechos de los estudiantes, propone mejoras para el colegio y genera actividades educativas, recreativas o solidarias.</p>
+      </div>
+  
+      <div class="integrante-card info-estatica">
+        <h5>🙋 ¿Quiénes lo integran?</h5>
+        <p class="subtitulo">Cualquier estudiante puede participar</p>
+        <p class="descripcion">Está compuesto por representantes elegidos por los propios alumnos. Pero todos pueden sumar ideas, ayudar en actividades o ser parte del equipo.</p>
+      </div>
+  
+      <div class="integrante-card info-estatica">
+        <h5>🚀 ¿Por qué es importante?</h5>
+        <p class="subtitulo">Tu voz cuenta</p>
+        <p class="descripcion">El centro permite que la opinión de los estudiantes sea escuchada y valorada. Es una forma de aprender a participar, debatir y construir una escuela mejor para todos.</p>
+      </div>
+  
+    </div>
+  </section>
+    
+    
+  
+<section class="nosotros-section" style="padding: 40px 20px; background-color: #e8f5e9; text-align: center;">
+  <div class="seccion-encabezado pulse-hover" onclick="toggleCandidatos()">
+    <h2>📣 Nosotros</h2>
+    <p>Conocé a cada uno de los candidatos que representan la Lista Verde.<br>📲 ¡Tocá acá para saber más!</p>
+  </div>
+  
+  <div class="candidatos-contenedor" style="display: none; flex-direction: column; align-items: center; gap: 30px;">
+  
+    <div class="fila-integrantes">
+      <div class="integrante-card" onclick="mostrarPropuesta(this)">
+<!-- -->        <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+        <h1>Tiago Torres</h1>
+        <p>Presidente</p>
+        <div class="bio">
+          <p>Liderazgo y compromiso para representar a todos los estudiantes.</p>
+          <a href="https://www.instagram.com/torre.815" target="_blank" class="instagram-link">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+  
+      <div class="integrante-card" onclick="mostrarPropuesta(this)">
+<!-- -->        <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+        <h1>Valentina Cahiuara</h1>
+        <p>Vicepresidenta</p>
+        <div class="bio">
+          <p>Escucha activa y propuesta de nuevas ideas para mejorar el colegio.</p>
+          <a href="https://www.instagram.com/valessx__" target="_blank" class="instagram-link">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="fila-integrantes">
+      <div class="integrante-card" onclick="mostrarPropuesta(this)">
+<!-- -->        <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+        <h1>Luciana Baquinzay</h1>
+        <p>Tesorera</p>
+        <div class="bio">
+          <p>Transparencia y control de fondos para apoyar actividades estudiantiles.</p>
+          <a href="https://www.instagram.com/luuu_mb" target="_blank" class="instagram-link">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+  
+      <div class="integrante-card" onclick="mostrarPropuesta(this)">
+<!-- -->        <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+        <h1>Amada Puchi</h1>
+        <p>Secretaria de Actas</p>
+        <div class="bio">
+          <p>Documentación clara y comunicación organizada de cada reunión.</p>
+          <a href="https://www.instagram.com/azzulpuchi__" target="_blank" class="instagram-link">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="fila-integrantes">
+      <div class="integrante-card" onclick="mostrarPropuesta(this)">
+<!-- -->        <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+        <h1>Exequiel Gonzales</h1>
+        <p>Secretario de Deportes</p>
+        <div class="bio">
+          <p>Impulso a la actividad física, con torneos y encuentros deportivos.</p>
+          <a href="https://www.instagram.com/exequielgonzalez204" target="_blank" class="instagram-link">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+  
+      <div class="integrante-card" onclick="mostrarPropuesta(this)">
+<!-- -->        <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+        <h1>Elias Chanalay</h1>
+        <p>Secretario de Prensa</p>
+        <div class="bio">
+          <p>Difusión y visibilidad de todas las actividades de la Lista Verde.</p>
+          <a href="https://www.instagram.com/eliasschank_" target="_blank" class="instagram-link">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  
+  
+</section>
+
+<section class="nosotros-section" style="padding: 40px 20px; background-color: #f1f8e9; text-align: center;">
+  <div class="seccion-encabezado animate__animated animate__fadeInDown" style="margin-bottom: 30px; cursor: pointer;" onclick="togglePropuestas()">
+    <h2 style="font-size: 2.5rem; color: #33691e; font-weight: bold; margin-bottom: 10px;">
+      Nuestras Propuestas 💡
+    </h2>
+    <p style="font-size: 1.1rem; color: #4e4e4e; max-width: 600px; margin: 0 auto;">
+      Tocá para descubrir las ideas que tenemos para mejorar juntos nuestra Institución.
+    </p>
+  </div>
+  <div class="propuestas-contenedor" style="display: none; flex-direction: column; align-items: center; gap: 30px;">
+    <div class="fila-integrantes">
+  <div class="integrante-card" onclick="mostrarPropuesta(this)">
+    <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+    <h5>🧻 Baños</h5>
+    <p> Abastecimiento de insumos higiénicos</p>
+    <div class="bio">
+      <p>Queremos asegurar condiciones básicas de higiene para todos los estudiantes en los sanitarios.</p>
+    </div>
+  </div>
+  <div class="integrante-card" onclick="mostrarPropuesta(this)">
+    <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+    <h5>🏀 Deportes</h5>
+    <p>Torneos interescolares</p>
+    <div class="bio">
+      <p>Fomentar la competencia sana y el trabajo en equipo mediante eventos deportivos anuales.</p>
+    </div>
+  </div>
+</div>
+<div class="fila-integrantes">
+  <div class="integrante-card" onclick="mostrarPropuesta(this)">
+    <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+    <h5>📚 Tutorías</h5>
+    <p>Apoyo entre compañeros</p>
+    <div class="bio">
+      <p>Estudiantes avanzados ayudarán a quienes necesiten reforzar materias.</p>
+    </div>
+  </div>
+  <div class="integrante-card" onclick="mostrarPropuesta(this)">
+    <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+    <h5>🎨 Recreación</h5>
+    <p>Actividades artísticas</p>
+    <div class="bio">
+      <p>Espacios creativos como talleres de dibujo, música o teatro para expresarse y relajarse.</p>
+    </div>
+  </div>
+</div>
+<div class="fila-integrantes">
+  <div class="integrante-card" onclick="mostrarPropuesta(this)">
+    <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+    <h5>🛍️ Feria</h5>
+    <p>Estudiantes emprendedores</p>
+    <div class="bio">
+      <p>Espacio donde mostrar y vender productos o servicios dentro del colegio.</p>
+    </div>
+  </div>
+  <div class="integrante-card" onclick="mostrarPropuesta(this)">
+    <button class="cerrar-bio" onclick="event.stopPropagation(); cerrarPropuesta(this)">✖</button>
+    <h5>💚 Solidaridad</h5>
+    <p>Jornadas de ayuda</p>
+    <div class="bio">
+      <p>Actividades solidarias como colectas, campañas y donaciones a quienes lo necesiten.</p>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<footer class="footer">
+
+  <div class="footer-content">
+    <p>Hecho con <span class="heart">💚</span> por <strong>Lista Verde</strong></p>
+    <p class="escuela">Centro Educativo Nonogasta</p>
+    <div class="footer-redes">
+      <a href="https://www.instagram.com/lista_verde.cen25" target="_blank" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://whatsapp.com/channel/0029Vb5x0wXKWEKkEsbpKO0h" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.tiktok.com/@tu_perfil_de_tiktok" target="_blank" title="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="mailto:tu_correo@electronico.com" title="Contacto por mail">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+  <br>
+  <div class="footer-logos">
+    <img src="img/lcen.png" alt="Logo Lista Verde" class="logo-footer">
+    <img src="img/lv.jpeg" alt="Logo Escuela" class="logo-footer">
+  </div>
+</footer>
+
+
+<script>
+  function toggleCandidatos() {
+    const contenedor = document.querySelector('.candidatos-contenedor');
+    const visible = contenedor.style.display === 'flex';
+    contenedor.style.display = visible ? 'none' : 'flex';
+  }
+
+  function togglePropuestas() {
+    const contenedor = document.querySelector('.propuestas-contenedor');
+    const visible = contenedor.style.display === 'flex';
+    contenedor.style.display = visible ? 'none' : 'flex';
+  }
+
+  //boton para controlar bio.> nota! indexar bien el estilo con el js 
+  function mostrarPropuesta(card) {
+    const bio = card.querySelector('.bio');
+    if (bio) {
+      bio.style.display = 'block';
+    }
+  }
+
+  function cerrarPropuesta(button) {
+    const bio = button.closest('.integrante-card').querySelector('.bio');
+    if (bio) {
+      bio.style.display = 'none';
+    }
+  }
+
+  function toggleCandidatos() {
+    const contenedor = document.querySelector('.candidatos-contenedor');
+    if (contenedor.style.display === 'none' || contenedor.style.display === '') {
+      contenedor.style.display = 'flex';
+    } else {
+      contenedor.style.display = 'none';
+    }
+  }
+
+  // Opcional: ocultar todas las bios al inicio
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll('.bio').forEach(bio => {
+      bio.style.display = 'none';
+    });
+  });
+  function toggleCandidatos() {
+  const contenedor = document.querySelector('.candidatos-contenedor');
+  const bios = contenedor.querySelectorAll('.bio');
+
+  const yaVisible = contenedor.style.display === 'flex';
+
+  contenedor.style.display = yaVisible ? 'none' : 'flex';
+
+  // Mostrar u ocultar las bios también
+  bios.forEach(bio => {
+    bio.style.display = yaVisible ? 'none' : 'block';
+  });
+}
+function togglePropuestas() {
+  const contenedor = document.querySelector('.propuestas-contenedor');
+  const bios = contenedor.querySelectorAll('.bio');
+
+  const yaVisible = contenedor.style.display === 'flex';
+
+  // Mostrar u ocultar contenedor
+  contenedor.style.display = yaVisible ? 'none' : 'flex';
+
+  // Mostrar u ocultar bios automáticamente ver donde -
+  bios.forEach(bio => {
+    bio.style.display = yaVisible ? 'none' : 'block';
+  });
+}
+
+function toggleCentroEstudiantes() {
+  const contenedor = document.getElementById("centroEstudiantesInfo");
+  if (contenedor.style.display === "none" || contenedor.style.display === "") {
+    contenedor.style.display = "flex";
+  } else {
+    contenedor.style.display = "none";
+  }
+}
+
+</script>
+
+</body>
+</html>
